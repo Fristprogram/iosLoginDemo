@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF4550C128980EF400E8C6DE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4550C028980EF400E8C6DE /* RegisterVC.swift */; };
+		FF4550C328981A6700E8C6DE /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4550C228981A6700E8C6DE /* SuccessVC.swift */; };
 		FF99F6852897DEA9007D4A0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99F6842897DEA9007D4A0D /* AppDelegate.swift */; };
 		FF99F6872897DEA9007D4A0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99F6862897DEA9007D4A0D /* SceneDelegate.swift */; };
-		FF99F6892897DEA9007D4A0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99F6882897DEA9007D4A0D /* ViewController.swift */; };
+		FF99F6892897DEA9007D4A0D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99F6882897DEA9007D4A0D /* LoginVC.swift */; };
 		FF99F68C2897DEA9007D4A0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF99F68A2897DEA9007D4A0D /* Main.storyboard */; };
 		FF99F68E2897DEAA007D4A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF99F68D2897DEAA007D4A0D /* Assets.xcassets */; };
 		FF99F6912897DEAA007D4A0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF99F68F2897DEAA007D4A0D /* LaunchScreen.storyboard */; };
@@ -36,10 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF4550C028980EF400E8C6DE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		FF4550C228981A6700E8C6DE /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
 		FF99F6812897DEA9007D4A0D /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF99F6842897DEA9007D4A0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF99F6862897DEA9007D4A0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF99F6882897DEA9007D4A0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF99F6882897DEA9007D4A0D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FF99F68B2897DEA9007D4A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF99F68D2897DEAA007D4A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF99F6902897DEAA007D4A0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,11 +105,13 @@
 			children = (
 				FF99F6842897DEA9007D4A0D /* AppDelegate.swift */,
 				FF99F6862897DEA9007D4A0D /* SceneDelegate.swift */,
-				FF99F6882897DEA9007D4A0D /* ViewController.swift */,
+				FF99F6882897DEA9007D4A0D /* LoginVC.swift */,
 				FF99F68A2897DEA9007D4A0D /* Main.storyboard */,
 				FF99F68D2897DEAA007D4A0D /* Assets.xcassets */,
 				FF99F68F2897DEAA007D4A0D /* LaunchScreen.storyboard */,
 				FF99F6922897DEAA007D4A0D /* Info.plist */,
+				FF4550C028980EF400E8C6DE /* RegisterVC.swift */,
+				FF4550C228981A6700E8C6DE /* SuccessVC.swift */,
 			);
 			path = LoginDemo;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF99F6892897DEA9007D4A0D /* ViewController.swift in Sources */,
+				FF4550C328981A6700E8C6DE /* SuccessVC.swift in Sources */,
+				FF99F6892897DEA9007D4A0D /* LoginVC.swift in Sources */,
 				FF99F6852897DEA9007D4A0D /* AppDelegate.swift in Sources */,
 				FF99F6872897DEA9007D4A0D /* SceneDelegate.swift in Sources */,
+				FF4550C128980EF400E8C6DE /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -482,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
