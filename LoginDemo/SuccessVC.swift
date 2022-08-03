@@ -8,11 +8,13 @@
 import UIKit
 
 class SuccessVC: UIViewController {
+    var text:String = ""
 
+    @IBOutlet weak var successTV: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        successTV.text = text
     }
     
     @IBAction func clickExitBtn(_ sender: UIButton) {

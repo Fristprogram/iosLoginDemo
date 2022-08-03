@@ -16,7 +16,7 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tipsLabel.text = nil
     }
 
     @IBAction func loginBtn(_ sender: UIButton) {
@@ -25,9 +25,31 @@ class LoginVC: UIViewController {
         }else{
             print("请输入账号密码")
         }
-        
-        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "success"{
+            if let succ = segue.destination as? SuccessVC {
+                succ.text = "登录成功！"
+            }
+        }
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "success"{
+            let useName = accountTextField.text ?? ""
+            if useName.isEmpty {
+                tipsLabel.text = "请输入用户名"
+                return false
+            }
+            let password = passwordTextField.text ?? ""
+            if password.isEmpty{
+                tipsLabel.text = "请输入密码"
+                return false
+            }
+            tipsLabel.text = nil
+        }
+        return true
+    }
 }
 

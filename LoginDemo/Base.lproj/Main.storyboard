@@ -49,7 +49,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y5k-br-xH5"/>
-                                            <segue destination="gqk-5I-js7" kind="presentation" id="bg0-AP-9eh"/>
+                                            <segue destination="gqk-5I-js7" kind="presentation" identifier="success" id="bg0-AP-9eh"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdA-PG-8sT">
@@ -68,7 +68,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="pLw-Ri-tdU" kind="show" id="99F-kB-Mjn"/>
+                                                    <segue destination="pLw-Ri-tdU" kind="show" identifier="register" id="99F-kB-Mjn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -144,7 +144,7 @@
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="gqk-5I-js7" kind="presentation" id="mkc-qS-36c"/>
+                                            <segue destination="gqk-5I-js7" kind="presentation" identifier="success" id="mkc-qS-36c"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="zde-uz-XbW">
@@ -190,6 +190,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="zCi-4c-4E9"/>
+                    <connections>
+                        <outlet property="registerLabel" destination="mLZ-8A-iyb" id="uxW-Hu-qbe"/>
+                        <outlet property="registerPasswordTF" destination="HPV-WS-xFF" id="yc2-rD-AXU"/>
+                        <outlet property="registerTF" destination="RHl-iI-Qkk" id="UJ6-89-dqe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwf-bc-RXg" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,6 +245,9 @@
                             <constraint firstItem="pkN-Z3-nSf" firstAttribute="centerX" secondItem="EYz-5f-uP1" secondAttribute="centerX" id="o5V-6o-LEW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="successTV" destination="CK5-qQ-1tp" id="Uby-eb-SG4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnG-WK-sKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
